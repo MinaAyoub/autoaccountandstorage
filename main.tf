@@ -1,5 +1,5 @@
 module "storage_account" {
-  source = "./modules/storage-account"
+  source = "./modules/storageaccount"
 
   name                = var.storage_account_name
   resource_group_name = var.resource_group_name
@@ -8,7 +8,7 @@ module "storage_account" {
 }
 
 module "automation_account" {
-  source = "./modules/automation-account"
+  source = "./modules/automationaccount"
 
   name                = var.automation_account_name
   resource_group_name = var.resource_group_name
