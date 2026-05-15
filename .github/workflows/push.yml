@@ -37,6 +37,14 @@ jobs:
       run: |
         az account show
 
+
+    - name: Debug - where am I and what's here
+      run: |
+        pwd
+        ls -la
+        echo "---"
+        cat terraform.tfvars
+
     # Run Terraform init
     - name: Terraform Init
       id: init
