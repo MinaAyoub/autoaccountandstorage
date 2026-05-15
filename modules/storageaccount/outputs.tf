@@ -18,3 +18,8 @@ output "primary_access_key" {
   value       = azurerm_storage_account.this.primary_access_key
   sensitive   = true
 }
+
+output "container_name" {
+  description = "The name of the blob container."
+  value       = azurerm_storage_container.this.name
+}

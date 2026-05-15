@@ -23,3 +23,8 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "container_name" {
+  description = "The name of the blob container to create inside the Storage Account."
+  type        = string
+}

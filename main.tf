@@ -11,6 +11,7 @@ module "storage_account" {
   resource_group_name = azurerm_resource_group.saccount.name
   location            = var.location
   tags                = var.tags
+  container_name      = var.container_name
 }
 
 module "automation_account" {
